@@ -30,10 +30,10 @@ pgk_env.require = dofile("rom/modules/main/cc/require.lua").make(pgk_env, "rom/m
 local require = pgk_env.require
 _G.require = require
 local VER = "src"
-local Copyright = http.get("https://raw.githubusercontent.com/Starlight-CC/Starlight-OS/refs/heads/main/"..VER.."/install/TOSPrint.txt")
+local Copyright = http.get("https://raw.githubusercontent.com/Starlight-CC/Starlight-OS/refs/heads/Dev/"..VER.."/install/TOSPrint.txt")
 local API = "https://api.github.com/repos/Starlight-CC/Starlight-OS/contents/"
-local json = load(http.get("https://raw.githubusercontent.com/Starlight-CC/Starlight-OS/refs/heads/main/"..VER.."/install/json.la").readAll())()
-local PrimeUI = load(http.get("https://raw.githubusercontent.com/Starlight-CC/Starlight-OS/refs/heads/main/"..VER.."/install/PrimeUI.la").readAll())()
+local json = load(http.get("https://raw.githubusercontent.com/Starlight-CC/Starlight-OS/refs/heads/Dev/"..VER.."/install/json.la").readAll())()
+local PrimeUI = load(http.get("https://raw.githubusercontent.com/Starlight-CC/Starlight-OS/refs/heads/Dev/"..VER.."/install/PrimeUI.la").readAll())()
 
 local expect = require("cc.expect")
 local expect, field = expect.expect, expect.field
