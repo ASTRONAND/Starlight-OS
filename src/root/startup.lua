@@ -21,4 +21,3 @@ filed under GNU General Public License.
 ]]
 sleep(0)
 shell.run("/boot/bios.lua")
-print("Hello You are running Starlight OS")
